@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./Assets/Img/iconoM.ico">
+	<title>Grids y Responsive</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<style>
+		h1{
+			font-size: 80px;
+		}	
+	</style>
+</head>
+
+<body>
+	<!-- CABECERA CON 5 PESTAÑAS + LOGO -->
+	<header class="header">
+		<div class="header-top">
+			<a class="header-logo" href="../index.html"><img class="logo" src="../assets/Img/Logo-1024x279.png"
+					alt="Mozione"> </a>
+			<button class="header-btn">=</button>
+		</div>
+		<nav class="header-menu">
+			<ul>
+				<li><a href="../index.html" class="nav-link">Home</a></li>
+				<li><a href="quienes_somos.html" class="nav-link">Quienes Somos</a></li>
+				<li><a href="0km.html" class="nav-link">0km</a></li>
+				<li><a href="usados.html" class="nav-link">Usados</a></li>
+				<li><a href="contacto.html" class="nav-link">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<script>
+		const header_btn = document.querySelector('.header-btn')
+		const header_menu = document.querySelector('.header-menu')
+		header_btn.addEventListener('click', () => {
+			console.log(header_menu.style.display)
+			if (header_menu.style.display != 'block') {
+				header_menu.style.display = 'block'
+				header_btn.innerHTML = 'X'
+			} else {
+				header_menu.style.display = 'none'
+				header_btn.innerHTML = '='
+			}
+		})
+	</script>
+	
+	<main>
+		<!-- USADOS -->
+
+		<section class="sectionUsados">
+			<h1>Usados de Seleccion</h1>
+			<div class="Usados">
+				<img class="Usados" src="../assets/Img/usado1.png" alt="usado1">
+				<img class="Usados" src="../assets/Img/usado2.png" alt="usado2">
+				<img class="Usados" src="../assets/Img/usado3.png" alt="usado3">
+				<img class="Usados" src="../assets/Img/usado4.png" alt="usado4">
+			</div>
+
+		</section>
+
+
+	</main>
+
+
+	<!-- INICIO FOOTER-->
+
+	<footer id="footer">
+		<div class="footer">
+			<div class="Contactos">
+				<li>Telefonos</li>
+				<li>Mail</li>
+			</div>
+			<div class="RRSS">
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+			</div>
+			<div class="Localizacion_Google_Maps">
+				<li>Localizacion_Google_Maps</li>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
