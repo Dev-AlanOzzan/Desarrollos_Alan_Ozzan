@@ -5,8 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="./Assets/Img/iconoM.ico">
-	<title>Grids y Responsive</title>
+	<title>Quienes Somos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 
 <body>
@@ -19,12 +22,22 @@
 			<button class="header-btn">=</button>
 		</div>
 		<nav class="header-menu">
-			<ul>
-				<li><a href="../index.html" class="nav-link">Home</a></li>
-				<li><a href="quienes_somos.html" class="nav-link">Quienes Somos</a></li>
-				<li><a href="0km.html" class="nav-link">0km</a></li>
-				<li><a href="usados.html" class="nav-link">Usados</a></li>
-				<li><a href="contacto.html" class="nav-link">Contacto</a></li>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/quienes_somos.html">Quienes Somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/0km.html">0 Km</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/usados.html">Usados</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/contacto.html">Contacto</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -64,8 +77,79 @@
 
 	<!-- INICIO FOOTER-->
 
-	<footer id="footer">
-		<div class="footer">
+	<footer class="footer bg-black">
+		<div class="container-fluid">
+			<div class="row p-5 pb-2">
+				<!-- 			<div class="row p-5">
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="mb-2">
+					<p class="h3">Codigo QR</p>
+				</div> -->
+				<div class="img-fluid">
+					<img src="../assets/Img/logo-web_Mesa-de-trabajo-1.png" class="img-fluid" alt="">
+				</div>
+			</div>
+
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Links</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Inicio</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Quienes Somos</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Usados</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Financiados</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Detailing</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Motos</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Privacidad</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Politica de Privacidad</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Reclamos</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Soporte</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">FAQ</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Contacto</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Instagram</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Facebook</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Twitter</a>
+			</div>
+		</div>
+		</div>
+
+		</div>
+
+		</div>
+
+
+		<!-- <div class="footer">
 			<div class="Contactos">
 				<li>Telefonos</li>
 				<li>Mail</li>
@@ -78,8 +162,12 @@
 			<div class="Localizacion_Google_Maps">
 				<li>Localizacion_Google_Maps</li>
 			</div>
-		</div>
+		</div> -->
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+
 </body>
 
 </html>
