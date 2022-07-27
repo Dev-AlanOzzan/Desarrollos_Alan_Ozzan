@@ -12,11 +12,11 @@ body {
 .header {
     background-color: #3a7b99;
     padding: 25px;
-}
 
-.header-top {
-    display: flex;
-    justify-content: space-between;
+    &-top {
+        justify-content: space-between;
+        display: flex;
+    }
 }
 
 .header-logo {
@@ -53,26 +53,24 @@ body {
     gap: 15px;
     align-items: center;
     padding-top: 20px;
-}
 
+    .nav-link {
+        background-color: #a5def1;
+        font-weight: 700;
+        margin: 0px 50px 0px 0px;
+        padding: 10px 15px;
+        border-radius: 20px;
+        color: rgb(20, 35, 173);
 
+        &:hover {
+            box-shadow: 3px 5px 5px #70afce;
+            color: $color_principal;
+        }
 
-.nav-link {
-    color: rgb(20, 35, 173);
-    background-color: #a5def1;
-    font-weight: 700;
-    margin: 0px 50px 0px 0px;
-    padding: 10px 15px;
-    border-radius: 20px;
-}
-
-.nav-link:hover {
-    color: $color_principal;
-    box-shadow: 3px 5px 5px #70afce;
-}
-
-.nav-link:active {
-    background-color: aqua;
+        .nav-link:active {
+            background-color: aqua;
+        }
+    }
 }
 
 a {
@@ -102,34 +100,6 @@ a {
 
 /* Anidacion cards */
 
-.card{
-    border-radius: 10px;
-    min-height: 200px;
-    font-weight: bold;
-    color: aliceblue;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-
-        .textosA{
-            height: 100%;
-            color: aliceblue;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-           }
-        .textosB{
-            height: 100%;
-            color: $color_principal;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          }
-    }
-/* 
 .card {
     border-radius: 10px;
     min-height: 200px;
@@ -140,27 +110,25 @@ a {
     overflow: hidden;
     background-size: cover;
     background-position: center center;
+
+    .textosA {
+        height: 100%;
+        color: aliceblue;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .textosB {
+        height: 100%;
+        color: $color_principal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
-.card .textosA {
-    height: 100%;
-    color: aliceblue;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card .textosB {
-    height: 100%;
-    color: $color_principal;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
- */
 .banner {
     border-radius: 10px;
     text-align: center;
@@ -290,10 +258,10 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
-    .header-top {
-        padding-bottom: 0px;
+        &-top {
+            padding-bottom: 0px;
+        }
     }
 
     .header-menu {
